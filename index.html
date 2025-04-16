@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Potiê - Bolos de Pote Artesanais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f9e5d8;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #d35400;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonials {
+      background-color: #fefefe;
+      padding: 60px 20px;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-left: 5px solid #d35400;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial h3 {
+      margin-top: 10px;
+      text-align: right;
+      color: #d35400;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      z-index: 1000;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      background-color: #f9e5d8;
+      text-align: center;
+      padding: 20px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gallery img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Potiê</h1>
+    <p>Deliciosos bolos de pote artesanais feitos com amor</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; color:#d35400;">Nossos Sabores</h2>
+    <div class="gallery">
+      <img src="URL_DA_IMAGEM_1" alt="Bolo de Pote Sabor 1">
+      <img src="URL_DA_IMAGEM_2" alt="Bolo de Pote Sabor 2">
+      <img src="URL_DA_IMAGEM_3" alt="Bolo de Pote Sabor 3">
+      <img src="URL_DA_IMAGEM_4" alt="Bolo de Pote Sabor 4">
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 style="text-align:center; color:#d35400;">Depoimentos de Clientes</h2>
+    <div class="testimonial">
+      <p>"Os bolos da Potiê são simplesmente maravilhosos! Sempre fresquinhos e com sabores incríveis."</p>
+      <h3>— Ana Clara</h3>
+    </div>
+    <div class="testimonial">
+      <p>"Comprei para uma festa e todos adoraram. Atendimento excelente e entrega pontual."</p>
+      <h3>— João Pedro</h3>
+    </div>
+    <div class="testimonial">
+      <p>"Recomendo de olhos fechados! O melhor bolo de pote que já experimentei."</p>
+      <h3>— Mariana Silva</h3>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5512997666688" class="whatsapp-button" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+    📞
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Potiê - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
